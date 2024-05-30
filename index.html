@@ -1,36 +1,31 @@
-<html lang="en">
+<!DOCTYPE html>
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Foro de Discuciòn 
+    "MujeresHablan"</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <section class="showcase">
-        <header>
-            <div class="container">
-                <nav>
-                    <ul>
-                    </ul>
-                </nav>
-            </div>
-        </header>
-        <video src="video/video4.mp4" muted loop autoplay></video>
-        <div class="overlay"></div>
-        <div class="text">
-            <h2>Mujeres</h2>
-            <h3>Hablan</h3>
-            <p>“MujeresHablan” es una plataforma en línea diseñada específicamente para mujeres.
-                 Su objetivo es concienciar sobre el acoso a la mujer y proporcionar un espacio
-                  seguro donde las mujeres puedan compartir sus experiencias, buscar apoyo y
-                   conectarse con otras personas que han enfrentado situaciones similares.</p>
-            <a href="#">contactanos</a>
-        </div>
-        <ul class="social">
-            <li><a href="#"><img src="https://i.ibb.co/ySwtH4B/instagram.png"></a></li>
-        </ul>
+  <header>
+    <h1>Foro de Discusión</h1>
+  </header>
+  <main>
+    <section id="new-post">
+      <h2>Nueva Publicación</h2>
+      <form id="post-form">
+        <input type="text" id="post-title" placeholder="Título" required>
+        <textarea id="post-content" placeholder="Contenido" required></textarea>
+        <button type="submit">Publicar</button>
+      </form>
     </section>
-    <script src="main.js"></script>
+    <section id="posts">
+      <h2>Publicaciones de usuarios</h2>
+      <div id="post-list"></div>
+    </section>
+  </main>
+  <script src="script.js"></script>
 </body>
 </html>
+
